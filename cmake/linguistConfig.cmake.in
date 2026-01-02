@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2025 Jamie Kenyon. All Rights Reserved.
+#
+
+@PACKAGE_INIT@
+
+# Find dependencies
+include(CMakeFindDependencyMacro)
+find_dependency(nlohmann_json REQUIRED)
+
+# Include targets
+include("${CMAKE_CURRENT_LIST_DIR}/LinguistTargets.cmake")
+
+# Include the embedding function
+include("${CMAKE_CURRENT_LIST_DIR}/LinguistEmbedTranslations.cmake")
+
+check_required_components(Linguist)

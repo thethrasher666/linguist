@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2025 Jamie Kenyon. All Rights Reserved.
+#
+
+
+# Files to ignore:
+.DS_Store
+compile_commands.json
+
+
+# Directories to ignore:
+.vs/
+.vscode/
+out/
+
+research/
